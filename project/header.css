@@ -1,0 +1,159 @@
+header {
+    display: flex;
+    padding: 1.6rem 6.9rem;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+#btn-burger {
+    display: none;
+}
+
+header img {
+    width: max-content;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header #menu {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem; 
+}
+
+#menu a {
+    font-size: 1.4rem;
+    color: #000C2D;
+    font-weight: 500;
+}
+
+#menu #btn-demo {
+    padding: 1.2rem 2.3rem;
+    background-color: white;
+    border: 1px solid #2F70FE;
+    font-size: 1.6rem;
+    color: #2F70FE;
+    font-weight: 500;
+}
+
+#menu #btn-demo:hover {
+    color: white;
+    background-color: #2F70FE;;
+}
+
+@media (max-width: 956px) {
+    header {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 821px) {
+    #menu #btn-demo {
+        display: none;
+    }  
+}
+
+@media (max-width: 600px) {
+    #nav #menu {
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 6.3rem;
+        right: 0;
+        background: white;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .6s;
+        overflow-y: hidden;
+    }
+
+    #menu a {
+        font-size: 3.6rem;
+    }
+
+    #menu #btn-demo {
+        font-size: 3.6rem;
+    }
+
+    header #btn-burger {
+        display: flex;
+        background: none;
+        padding: .5rem 1rem;
+    }
+
+    #burger {
+        display: block;
+        color: black;
+        border-top: .2rem solid;
+        width: 40px;
+    }
+
+    #burger::after, #burger::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 1.5px;
+        background: currentColor;
+        margin-top: 9px;
+        position: relative;
+        transition: .4s;
+    }
+
+    #nav.active #menu {
+        gap: 4rem;
+        height: calc(100vh - 6.3rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #nav.active #btn-demo {
+        display: block;
+        border: none;
+    }
+
+    #nav.active #burger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #burger::after {
+        transform: rotate(135deg);
+        top: -1.1rem;
+    }
+
+    #nav.active #burger::before {
+        transform: rotate(-135deg);
+    }
+}
+
+@media (max-width: 466px) {
+    #burger {
+        width: 35px;
+    }
+
+    #burger::after, #burger::before {
+        width: 35px;
+    }
+}
+
+@media (max-width: 390px) {
+    #burger {
+        width: 30px;
+    }
+
+    #burger::after, #burger::before {
+        width: 30px;
+    }
+
+    header img {
+        width: 80%;
+    }
+}
+

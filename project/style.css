@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* =========== Section 1: Home ============= */
+
+#home-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F70FE;
+}
+
+#text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+    padding-top: 14.7rem;
+    width: 50%;
+    text-align: center;
+}
+
+#text-area h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+#text-area p {
+    font-size: 1.6rem;
+    color: white;
+    line-height: 3rem;
+}
+
+#img-area {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2F70FE;
+    width: 100%;
+}
+
+#img-area button {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    height: max-content;
+    padding: 1.6rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 3.3rem;
+}
+
+@media (max-width: 870px) {
+    #text-area {
+        padding-top: 8.7rem;
+    }
+
+    #text-area h1 {
+        font-size: 4rem;
+    }
+
+    #img-area img {
+        width: 25%;
+        height: max-content;
+    }
+}
+
+@media (max-width: 796px) {
+    #text-area {
+        padding-top: 5.1rem;
+        gap: 1.7rem;
+    }
+
+    #text-area h1 {
+        font-size: 3.2rem;
+    }
+
+    #text-area p {
+        font-size: 1.4rem;
+    }
+
+    #img-area button{
+        font-size: 1.6rem;
+        margin-top: 2.5rem;
+        margin-bottom: 5.1rem;
+        padding: 1.6rem 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #img-area img {
+        display: none;
+    }
+
+    #text-area {
+        padding-top: 5.1rem;
+        gap: 1.7rem;
+    }
+
+    #text-area h1 {
+        font-size: 3.6rem;
+    }
+
+    #text-area p {
+        font-size: 1.6rem;
+    }
+
+    #img-area button{
+        font-size: 1.6rem;
+        margin-top: 2.5rem;
+        margin-bottom: 5.1rem;
+        padding: 1.6rem 2.5rem;
+    }
+}
+
+@media (max-width: 426px) {
+    #text-area {
+        width: 90%;
+    }
+}
+
+/* =================== Section 2: Features* ================= */
+
+#features-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.1rem;
+    padding-bottom: 10.7rem;
+    background: rgba(0, 255, 133, 0.08);
+    
+}
+
+#features-area h1 {
+    font-size: 4rem;
+    font-weight:500;
+    padding-top: 7.9rem;
+}
+
+#features-area #cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 5.6rem;
+}
+
+#cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 21.38%;
+    gap: 2.4rem;
+}
+
+#cards div p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #000C2D;
+}
+
+@media (max-width: 1000px) {
+    #features-area {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    #features-area #cards {
+        gap: 4.6rem;
+    }
+}
+
+@media (max-width: 796px) {
+    #features-area {
+        gap: 5rem;
+        padding-left: .2rem;
+        padding-right: .2rem;
+    }
+
+    #features-area #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cards div {
+        width: 60%;
+    }
+}
+
+/* ================ Section 3: Services1 ================ */
+
+#services-area1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    padding-top: 6.5rem;
+    padding-bottom: 9rem;
+}
+
+#services-area1 aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 30%;
+}
+
+#services-area1 h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    width: 80%;
+    color: #181818;
+} 
+
+#services-area1 p {
+    font-size: 1.6rem;
+    color: #000C2D;
+}
+
+@media (max-width: 1245px) {
+    #services-area1 h3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 796px) {
+    #services-area1 aside {
+        width: 30%;
+    }
+
+    #services-area1 h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #services-area1 p {
+        text-align: center;
+    }
+
+    #services-area1 img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    #services-area1 {
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #services-area1 img {
+        width: 90%;
+    }
+
+    #services-area1 aside {
+        width: 90%;
+        align-items: center;
+    }
+
+    #services-area1 h3 {
+        font-size: 2.8rem;
+    }
+}
+
+/* =============== Section 3: Services2 ================== */
+
+#services-area2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    padding-top: 12rem;
+    padding-bottom: 9rem;
+}
+
+#services-area2 aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2.4rem;
+}
+
+#services-area2 h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    width: 95%;
+    color: #181818;
+}
+
+#services-area2 #text-services2 {
+    font-size: 1.6rem;
+    color: #000C2D;
+}
+
+.btn-signup {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.btn-signup p {
+    font-size: 1.6rem;
+    color: #2F70FE;
+    font-weight: 500;
+}
+
+@media (max-width: 796px) {
+    #services-area2 aside {
+        width: 30%;
+        align-items: center;
+    }
+
+    #services-area2 h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #services-area2 #text-services2 {
+        text-align: center;
+    }
+
+    #services-area2 #services2-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    #services-area2 {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #services-area2 #services2-img {
+        width: 90%;
+    }
+
+    #services-area2 aside {
+        width: 90%;
+        align-items: center;
+    }
+
+    #services-area2 h3 {
+        font-size: 2.8rem;
+        width: 90%;
+    }
+}
+
+/* ================ Section 3: Services3 ================ */
+
+#services-area3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    padding-top: 9.1rem;
+    padding-bottom: 9rem;
+}
+
+#services-area3 aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2.4rem;
+}
+
+#services-area3 h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    width: 100%;
+    color: #181818;
+}
+
+#services-area3 #text-services3 {
+    font-size: 1.6rem;
+    width: 80%;
+    color: #000C2D;
+}
+
+@media (max-width: 796px) {
+    #services-area3 aside {
+        width: 30%;
+        align-items: center;
+    }
+
+    #services-area3 h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #services-area3 #text-services3 {
+        text-align: center;
+    }
+
+    #services-area3 #services3-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    #services-area3 {
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+
+    #services-area3 #services3-img {
+        width: 90%;
+    }
+
+    #services-area3 aside {
+        width: 90%;
+        align-items: center;
+    }
+
+    #services-area3 h3 {
+        font-size: 2.8rem;
+        width: 100%;
+    }
+
+    #services-area3 #text-services3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #services-area3 #services3-img {
+        width: 80%;
+    }
+}
+/* ================ Section 3: Services4 ============== */
+
+#services-area4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    padding-top: 9.1rem;
+    padding-bottom: 9rem;
+}
+
+#services-area4 aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2.4rem;
+}
+
+#services-area4 h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    width: 100%;
+    color: #181818;
+}
+
+#services-area4 #text-services4 {
+    font-size: 1.6rem;
+    width: 90%;
+    color: #000C2D;
+}
+
+@media (max-width: 796px) {
+    #services-area4 aside {
+        width: 30%;
+        align-items: center;
+    }
+
+    #services-area4 h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #services-area4 #text-services4 {
+        text-align: center;
+    }
+
+    #services-area4 #services4-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    #services-area4 {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #services-area4 #services4-img {
+        width: 90%;
+    }
+
+    #services-area4 aside {
+        width: 90%;
+        align-items: center;
+    }
+
+    #services-area4 h3 {
+        font-size: 2.8rem;
+        width: 90%;
+    }
+
+    #services-area4 #text-services4 {
+        width: 100%;
+    }
+}
+
+/* =================== Section 4: Footer ==================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.7rem;
+    background-color: black;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    gap: 17.6rem;
+}
+
+.informs-2p2 {
+    display: flex;
+    gap: 17.6rem;
+}
+
+#informs .footer-inform {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.footer-inform h3 {
+    font-size: 1.6rem;
+}
+
+.footer-inform .inform-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inform-link a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+footer p {
+    color: white;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1100px) {
+    footer section {
+        gap: 10rem;
+    }
+
+    .informs-2p2 {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 796px) {
+    footer section {
+        align-items:flex-start;
+        flex-direction: column
+    }
+}

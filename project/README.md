@@ -1,0 +1,2 @@
+## Descrição da atividade
+O projeto Zomentum tem por objetivo intensificar o aprendizado em Javascript, aprendendo como aplicar elementos HTML dentro do Javacript através do Document Object Model (DOM). O projeto possui o formato landing page, em que todas as suas informações estão organizadas em uma única página.
